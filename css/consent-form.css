@@ -1,0 +1,85 @@
+#fld-cookie-consent-root {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 1rem;
+  margin: 0 auto;
+  border-top: 1px solid #000;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+  z-index: 9999;
+  display: none;
+}
+
+#fld-cookie-consent-root.show {
+  display: block;
+}
+
+#fld-cookie-consent-root form .form-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#fld-cookie-consent-root form .form-group label {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+#fld-cookie-consent-root form {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#fld-cookie-consent-root .button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+#fld-cookie-consent-root form .form-group .show-cookies {
+  background: unset;
+  border: unset;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z'/%3E%3C/svg%3E")
+    center/contain no-repeat;
+  padding: 7px;
+}
+
+#fld-cookie-consent-root form .cookie-list {
+  display: none;
+  padding-bottom: 0.5rem;
+  padding-top: 0;
+  padding-left: 22px;
+}
+
+#fld-cookie-consent-root form .cookie-list p {
+  font-size: 0.9rem;
+}
+
+#fld-cookie-consent-root form .cookie-list.show {
+  display: block;
+}
+
+.floating-cookie-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: var(--bg-color);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  appearance: none;
+}
+
+.floating-cookie-button i {
+  width: 24px;
+  height: 24px;
+}
